@@ -1,6 +1,6 @@
 **Forecasting Farmer Futures**
 
-Idea Proposal
+
 
 **Group 4**
 
