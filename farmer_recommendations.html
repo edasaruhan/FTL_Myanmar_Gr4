@@ -1,0 +1,287 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Myanmar Agriculture Forecast Report</title>
+            <style>
+                :root {
+                    --primary-color: #2E8B57;
+                    --secondary-color: #4682B4;
+                    --positive-color: #00AA00;
+                    --negative-color: #FF4444;
+                    --neutral-color: #FFAA00;
+                }
+                
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                    color: #333;
+                }
+                
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                
+                .header {
+                    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+                    color: white;
+                    padding: 30px;
+                    text-align: center;
+                    border-radius: 15px;
+                    margin-bottom: 30px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                }
+                
+                .header h1 {
+                    margin: 0;
+                    font-size: 2.5em;
+                    font-weight: 300;
+                }
+                
+                .header p {
+                    margin: 10px 0 0 0;
+                    font-size: 1.2em;
+                    opacity: 0.9;
+                }
+                
+                .dashboard {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                    gap: 20px;
+                    margin-bottom: 30px;
+                }
+                
+                .card {
+                    background: white;
+                    padding: 25px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+                }
+                
+                .card h2 {
+                    color: var(--primary-color);
+                    margin-top: 0;
+                    border-bottom: 2px solid #f0f0f0;
+                    padding-bottom: 10px;
+                }
+                
+                .metric-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    gap: 15px;
+                    margin: 20px 0;
+                }
+                
+                .metric {
+                    text-align: center;
+                    padding: 15px;
+                    background: #f8f9fa;
+                    border-radius: 8px;
+                    border-left: 4px solid var(--primary-color);
+                }
+                
+                .metric-value {
+                    font-size: 1.8em;
+                    font-weight: bold;
+                    margin: 5px 0;
+                }
+                
+                .metric-label {
+                    font-size: 0.9em;
+                    color: #666;
+                }
+                
+                .outlook-positive {
+                    background: #e8f5e8;
+                    border-left: 4px solid var(--positive-color);
+                    padding: 20px;
+                    border-radius: 8px;
+                    margin: 20px 0;
+                }
+                
+                .recommendation-list {
+                    list-style: none;
+                    padding: 0;
+                }
+                
+                .recommendation-list li {
+                    padding: 10px 0;
+                    border-bottom: 1px solid #f0f0f0;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .recommendation-list li:before {
+                    content: "✓";
+                    color: var(--positive-color);
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+                
+                .feature-insights {
+                    background: #e3f2fd;
+                    padding: 20px;
+                    border-radius: 8px;
+                    margin: 20px 0;
+                }
+                
+                .feature-item {
+                    margin: 10px 0;
+                    padding: 10px;
+                    background: white;
+                    border-radius: 6px;
+                    border-left: 4px solid var(--secondary-color);
+                }
+                
+                @media (max-width: 768px) {
+                    .dashboard {
+                        grid-template-columns: 1fr;
+                    }
+                    
+                    .header h1 {
+                        font-size: 2em;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🌾 Myanmar Agricultural Forecast Report</h1>
+                    <p>Comprehensive Analysis & Recommendations • Generated on November 02, 2025</p>
+                </div>
+                
+                <div class="dashboard">
+                    <div class="card">
+                        <h2>📊 Executive Summary</h2>
+                        <div class="outlook-positive">
+                            <h3 style="margin: 0; color: var(--positive-color);">POSITIVE OUTLOOK</h3>
+                            <p style="margin: 10px 0 0 0; font-weight: bold;">Maintain current operations with focus on efficiency improvements</p>
+                        </div>
+                        
+                        <div class="metric-grid">
+                            <div class="metric">
+                                <div class="metric-label">Current Value</div>
+                                <div class="metric-value" style="color: var(--primary-color);">25.2%</div>
+                                <div class="metric-label">of GDP</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">3-Year Projection</div>
+                                <div class="metric-value" style="color: var(--secondary-color);">25.9%</div>
+                                <div class="metric-label">of GDP</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Growth Rate</div>
+                                <div class="metric-value" style="color: var(--positive-color);">+2.7%</div>
+                                <div class="metric-label">annual</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-label">Risk Level</div>
+                                <div class="metric-value" style="color: var(--negative-color);">Medium-Low</div>
+                                <div class="metric-label">uncertainty</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h2>💡 Strategic Recommendations</h2>
+                        <ul class="recommendation-list">
+                            <li>Review planting plans based on forecast outlook</li>
+                            <li>Implement recommended risk management strategies</li>
+                            <li>Diversify crop portfolio to spread risk</li>
+                            <li>Focus on climate-resilient agricultural practices</li>
+                            <li>Explore market diversification opportunities</li>
+                            <li>Invest in water conservation technologies</li>
+                            <li>Monitor agricultural bulletins regularly</li>
+                            <li>Consider cooperative farming models</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dashboard">
+                    <div class="card">
+                        <h2>🌱 Crop-Specific Guidance</h2>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div style="background: #e8f5e8; padding: 15px; border-radius: 8px;">
+                                <h4 style="margin: 0 0 10px 0; color: var(--positive-color);">✅ Favorable Crops</h4>
+                                <ul style="margin: 0; padding-left: 20px;">
+                                    <li>Rice (improved varieties)</li>
+                                    <li>Pulses (expanding demand)</li>
+                                    <li>Sesame (export potential)</li>
+                                    <li>Green gram (market stability)</li>
+                                </ul>
+                            </div>
+                            <div style="background: #fff3cd; padding: 15px; border-radius: 8px;">
+                                <h4 style="margin: 0 0 10px 0; color: var(--neutral-color);">⚠️ Monitor Closely</h4>
+                                <ul style="margin: 0; padding-left: 20px;">
+                                    <li>Maize (quality focus)</li>
+                                    <li>Groundnut (market prices)</li>
+                                    <li>Sugarcane (contract farming)</li>
+                                    <li>Vegetables (local demand)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h2>🔍 Key Success Factors</h2>
+                        <div class="feature-insights">
+                            <div class="feature-item"><strong>Value_Lag_1</strong> (78.4% impact)<br><small>Historical performance patterns strongly influence predictions</small></div><div class="feature-item"><strong>Value_Lag_2</strong> (19.6% impact)<br><small>Historical performance patterns strongly influence predictions</small></div><div class="feature-item"><strong>Value_Lag_5</strong> (1.3% impact)<br><small>Historical performance patterns strongly influence predictions</small></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>🛡️ Risk Management Framework</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div>
+                            <h4>🌦️ Climate Risks</h4>
+                            <ul>
+                                <li>Implement drought-resistant varieties</li>
+                                <li>Practice water conservation</li>
+                                <li>Diversify planting schedules</li>
+                                <li>Use weather forecasting tools</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>📈 Market Risks</h4>
+                            <ul>
+                                <li>Monitor price fluctuations</li>
+                                <li>Explore contract farming</li>
+                                <li>Diversify market channels</li>
+                                <li>Join farmer cooperatives</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>💼 Financial Risks</h4>
+                            <ul>
+                                <li>Maintain cost records</li>
+                                <li>Explore crop insurance</li>
+                                <li>Diversify income sources</li>
+                                <li>Plan for price volatility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer style="text-align: center; margin-top: 40px; padding: 20px; background: white; border-radius: 12px;">
+                    <p style="margin: 0; color: #666;">Generated by Myanmar Agricultural Forecasting System</p>
+                    <p style="margin: 5px 0 0 0; color: #888;">FTL Myanmar Machine Learning Bootcamp - Group 4</p>
+                    <p style="margin: 5px 0 0 0; color: #888;">For educational and research purposes</p>
+                </footer>
+            </div>
+        </body>
+        </html>
+        
