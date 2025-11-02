@@ -42,6 +42,10 @@ Expected Output:
 License:
 This system is developed for educational and research purposes as part of the FTL Myanmar Machine Learning Bootcamp.
 
+Output - 
 
+<img width="1871" height="899" alt="Image" src="https://github.com/user-attachments/assets/2aa3ee6b-b339-4eb0-88e0-5b559fa43732" /> <br> <br>
+
+<img width="1065" height="912" alt="Image" src="https://github.com/user-attachments/assets/3a144be6-bc15-4e73-a6ac-9aecc1b8e8df" /> <br><br>
 
 LAST UPDATED: November 2025
